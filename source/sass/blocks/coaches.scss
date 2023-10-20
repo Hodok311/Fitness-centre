@@ -1,0 +1,240 @@
+.coaches__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 47px;
+
+  @include vp-1199 {
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 41px;
+  }
+}
+
+.coaches__wrapper h2 {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: $fw-semibold;
+  color: $color-dark-blue;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-left: -6px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.coaches__wrapper-swiper {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+
+  @include vp-1299 {
+    padding: 0 100px;
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 47px;
+    margin-bottom: 70px;
+  }
+}
+
+.coaches__block {
+  position: relative;
+  width: calc((100% - 120px) / 4);
+
+  @include vp-1299 {
+    width: calc((100% - 80px) / 3);
+  }
+
+  @include vp-1199 {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 274px;
+  }
+}
+
+.coaches__card {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.coaches__card img {
+  width: 100%;
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+    aspect-ratio: 268 / 294;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+    aspect-ratio: 226 / 274;
+  }
+}
+
+.coaches__card h3 {
+  position: absolute;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: $fw-bold;
+  color: $color-default-white;
+  margin: 0;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+
+  @include vp-1199 {
+    margin-left: 3px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.coaches__block:hover h3 {
+  display: none;
+}
+
+.coaches__pop-up {
+  background-color: rgba(16, 38, 84, 0.89);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 52px 42px 30px 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  overflow: auto;
+  text-align: center;
+  box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+
+  @include vp-1199 {
+    padding: 54px 50px 30px 48px;
+  }
+
+  @include vp-767 {
+    padding: 43px 32px 10px 32px;
+  }
+}
+
+.coaches__block:hover .coaches__pop-up {
+  opacity: 1;
+}
+
+.coaches__pop-up h4 {
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: $fw-bold;
+  color: $color-default-white;
+  margin: 0;
+}
+
+.coaches__pop-up p {
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $fw-regular;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.coaches__specs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  margin-left: 22px;
+
+  @include vp-1199 {
+    margin-left: 23px;
+  }
+
+  @include vp-767 {
+    margin-left: 17px;
+  }
+}
+
+.coaches__pop-up li {
+  position: relative;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $fw-regular;
+  color: $color-default-white;
+  margin-bottom: 12px;
+}
+
+.coaches__pop-up li::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: -15px;
+  top: 7px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+
+  @include vp-1199 {
+    top: 5px;
+  }
+
+  @include vp-767 {
+    top: 7px;
+  }
+}
+
+.coaches__arrow--prev {
+  top: 50%;
+  left: 43px;
+
+  @include vp-1199 {
+    left: 40px;
+  }
+
+  @include vp-767 {
+    left: 5px;
+  }
+}
+
+.coaches__arrow--next {
+  top: 50%;
+  right: 43px;
+
+  @include vp-1199 {
+    right: 40px;
+  }
+
+  @include vp-767 {
+    right: 5px;
+  }
+}

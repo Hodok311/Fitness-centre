@@ -2,6 +2,11 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
+import './utils/swiper-bundle.esm.browser.min.js';
+import './utils/tabs';
+import './utils/slider';
+import './utils/video';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
